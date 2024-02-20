@@ -1,0 +1,13 @@
+<PeriodButton>
+    background_color: 0, 0, 0, 0
+    size_hint: 0.1,0.05
+    font_size: 14
+    font_name: 'assets/fonts/sans/Sans.ttf'
+    color: 0, 0, 0, 1
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [28]

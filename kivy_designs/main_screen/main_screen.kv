@@ -1,0 +1,51 @@
+<MainScreen>
+    name: "main_screen"
+
+    FloatLayout:
+        orientation: 'horizontal'
+        size: 414, 736
+        canvas.before:
+            Color:
+                rgba: (62/255, 5/255, 175/255, 1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        Label:
+            text: "Currency Swap"
+            font_name: 'assets/fonts/futura/Futura Book font.ttf'
+            bold: True
+            font_size: 35
+            color: 1, 1, 1, 1
+            pos_hint: {'center_x': .5, 'center_y': .955}
+
+        PeriodButton:
+            id: one_day
+            text: '1D'
+            pos_hint: {'center_x': .15, 'center_y': .572}
+
+        PeriodButton:
+            id: one_week
+            text: '1W'
+            pos_hint: {'center_x': .29, 'center_y': .572}
+
+        PeriodButton:
+            id: one_month
+            text: '1M'
+            pos_hint: {'center_x': .43, 'center_y': .572}
+
+        PeriodButton:
+            id: six_months
+            text: '1M'
+            pos_hint: {'center_x': .57, 'center_y': .572}
+
+        PeriodButton:
+            id: one_year
+            text: '1Y'
+            pos_hint: {'center_x': .71, 'center_y': .572}
+
+        PeriodButton:
+            id: five_years
+            text: '5Y'
+            pos_hint: {'center_x': .85, 'center_y': .572}
+
